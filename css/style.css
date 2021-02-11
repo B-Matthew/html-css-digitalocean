@@ -13,7 +13,7 @@ body {
 [class*="col-"] {
   /* debug */
   min-height: 100px;
-  background-color: red;
+  /* background-color: red; */
   border: 1px solid black;
 }
 /* Regole Header */
@@ -30,10 +30,21 @@ body {
   padding-top: 10px;
 }
 
+.navbar-default .navbar-nav > li > a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
 .navbar-default .navbar-nav > li > a {
-  font-size: 16px;
+  font-size: 15px;
   color: #031B4E;
 }
+
+#sign-up:hover {
+  background-color: blue;
+  color: white;
+}
+
 
 #sign-up {
   color: blue;
@@ -42,6 +53,25 @@ body {
   border-radius: 5px;
   padding: 10px 20px;
   margin-top: 5px;
+  transition: 0.3s;
+}
+
+@media all and (min-width:768px) and (max-width: 991px) {
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-nav {
+    display: none;
+  }
+  .navbar-header {
+    width: 100%;
+  }
+}
+
+/* SEZIONE JUMBOTRON */
+
+.header_jumbo {
+  background-image: url("../img/jumbo.svg");
 }
 
 
