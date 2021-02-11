@@ -1,0 +1,63 @@
+/* Regole Generali */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+}
+
+[class*="col-"] {
+  /* debug */
+  min-height: 100px;
+  background-color: red;
+  border: 1px solid black;
+}
+/* Regole Header */
+#logo  {
+  height: 35px;
+  width: auto;
+  margin-top: 5px;
+  margin-right: 60px;
+}
+
+.navbar-default {
+  border: none;
+  background-color: transparent;
+  padding-top: 10px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  font-size: 16px;
+  color: #031B4E;
+}
+
+#sign-up {
+  color: blue;
+  background-color: transparent;
+  border: 1px solid blue;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 5px;
+}
+
+
+
+/* Regole main */
+
+.icon-section , .design {
+  background-color: green;
+}
+
+.service-customers , .get_started {
+  background-color: blue;
+}
+
+/* Regole Footer */
+
+footer {
+  background-color: lightblue;
+}
