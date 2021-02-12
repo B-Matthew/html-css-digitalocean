@@ -17,6 +17,15 @@ body {
   border: 1px solid black;
 }
 /* Regole Header */
+
+.header_nav {
+  position: fixed;
+  top: 0;
+  z-index: 50;
+  background-color: white;
+  width: 100%;
+}
+
 #logo  {
   height: 35px;
   width: auto;
@@ -40,8 +49,8 @@ body {
   color: #031B4E;
 }
 
-#sign-up:hover {
-  background-color: blue;
+#sign-up:hover, #submit_login:hover {
+  background-color: #005EFF;
   color: white;
 }
 
@@ -56,7 +65,7 @@ body {
   transition: 0.3s;
 }
 
-@media all and (min-width:768px) and (max-width: 991px) {
+@media all and (min-width:768px) and (max-width: 1200px) {
   .navbar-toggle {
     display: block;
   }
@@ -72,19 +81,182 @@ body {
 
 .header_jumbo {
   background-image: url("../img/jumbo.svg");
+  margin-top: 70px;
+  background-size: cover;
+  padding-top: 40px;
 }
 
+/* SEZIONE TESTO */
+.header_jumbo h1 {
+  color: white;
+  font-size: 65px;
+}
 
+.header_jumbo p {
+  color: white;
+  font-size: 22px;
+}
+/* SEZIONE LOGIN */
+
+.tabella-login {
+  padding: 25px 0;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.header_jumbo .log_in{
+  width: 90%;
+  padding: 10px 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  margin-bottom: 10px;
+}
+
+.tabella-login> a {
+  font-size: 27px;
+  color: #015FFF;
+}
+
+#submit_login {
+  width: 90%;
+  background-color: #3385ff;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 8px 0;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+#signing-google {
+  width: 90%;
+  background-color: transparent;
+  border: 1px solid lightgrey;
+  padding: 6px 0;
+  border-radius: 5px;
+  color: grey;
+  transition: 0.3s;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+#signing-google:hover {
+  background-color: lightgrey;
+}
+
+#google-icon {
+  width: auto;
+  height: 20px;
+  position: absolute;
+  left: 5px;
+}
 
 /* Regole main */
-
+/* SEZIONE ICONE BUSINESS */
 .icon-section , .design {
-  background-color: green;
+  background-color: #F3F5F9;
+  text-align: center;
 }
 
-.service-customers , .get_started {
-  background-color: blue;
+.icon-section h5{
+  color: grey;
 }
+
+.icon-list li {
+  display: inline-block;
+  padding: 0 5px;
+  width: calc(100% / 7)
+}
+
+.icon-list img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+@media all and (max-width:767px) {
+  .icon-list li {
+    width: calc(100% / 3);
+  }
+}
+
+/* SEZIONE DEPLY AND SCALE */
+.deploy h2, .deploy h5, .design h2 , .design h5, .features h2{
+  text-align: center;
+}
+
+.deploy h5 ,.design h5{
+  font-size: 16px;
+}
+
+.deploy h5, .design h5, .deploy p , .features p{
+  color: grey;
+}
+
+.deploy-list li {
+  list-style: none;
+  border-left: 1px solid lightgrey;
+  padding: 8px 5px;
+}
+
+.deploy-list a {
+  font-size: 16px;
+}
+
+/* SEZIONE DESIGN FOR DEVELOPERS */
+.slide-img img{
+  width: 50%;
+}
+
+.slide-img a {
+    font-size: 30px;
+    color: grey;
+}
+
+.slide-img a:hover {
+  color: black;
+}
+
+@media all and (max-width:768px) {
+  .slide-img a {
+      display: none;
+  }
+}
+
+/* SEZIONE SERVICE CUSTOMER */
+.service-customers , .get_started {
+  background-image: linear-gradient(#0000e6, #000080);
+}
+
+.service-customers h2 {
+  color: white;
+  text-align: center;
+}
+
+.table > tbody > .first-tr > td{
+  border: none;
+}
+
+.service-customers tr td {
+  color: white;
+}
+
+.service-customers tr td a {
+  color: #00D7D2;
+  padding-left: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Regole Footer */
 
