@@ -10,12 +10,10 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-[class*="col-"] {
-  /* debug */
-  min-height: 100px;
-  /* background-color: red; */
-  border: 1px solid black;
+[class*=col-] {
+  min-height: 50px;
 }
+
 /* Regole Header */
 
 .header_nav {
@@ -89,12 +87,13 @@ body {
 /* SEZIONE TESTO */
 .header_jumbo h1 {
   color: white;
-  font-size: 65px;
+  font-size: 55px;
 }
 
 .header_jumbo p {
   color: white;
   font-size: 22px;
+  margin-bottom: 50px;
 }
 /* SEZIONE LOGIN */
 
@@ -117,6 +116,7 @@ body {
   font-size: 27px;
   color: #015FFF;
 }
+
 
 #submit_login {
   width: 90%;
@@ -154,13 +154,14 @@ body {
 
 /* Regole main */
 /* SEZIONE ICONE BUSINESS */
-.icon-section , .design {
+.icon-section , .design , .teams{
   background-color: #F3F5F9;
   text-align: center;
 }
 
 .icon-section h5{
   color: grey;
+  padding: 30px 0;
 }
 
 .icon-list li {
@@ -180,13 +181,23 @@ body {
   }
 }
 
+#view {
+  padding: 40px 0;
+}
+
 /* SEZIONE DEPLY AND SCALE */
-.deploy h2, .deploy h5, .design h2 , .design h5, .features h2{
+
+.deploy {
+  margin: 40px 0 ;
+}
+
+.deploy h2, .deploy h5, .design h2 , .design h5, .features h2, .get_started ,.service-customers h2{
   text-align: center;
 }
 
 .deploy h5 ,.design h5{
   font-size: 16px;
+  padding-bottom: 25px;
 }
 
 .deploy h5, .design h5, .deploy p , .features p{
@@ -196,19 +207,27 @@ body {
 .deploy-list li {
   list-style: none;
   border-left: 1px solid lightgrey;
-  padding: 8px 5px;
+  padding: 10px 5px;
 }
 
 .deploy-list a {
   font-size: 16px;
 }
 
+.deploy p {
+  padding-bottom: 20px;
+}
 /* SEZIONE DESIGN FOR DEVELOPERS */
-.slide-img img{
+.slide-img img {
   width: 50%;
+  margin-bottom: 20px;
 }
 
-.slide-img a {
+.design h2 {
+  margin-top: 30px;
+}
+
+.slide-img .arrow_slide {
     font-size: 30px;
     color: grey;
 }
@@ -223,15 +242,26 @@ body {
   }
 }
 
+
+/* SEZIONE FEATURES */
+
+.features h2 {
+  padding: 25px 0;
+}
+
+
+
 /* SEZIONE SERVICE CUSTOMER */
 .service-customers , .get_started {
   background-image: linear-gradient(#0000e6, #000080);
+  margin-top: 25px;
+  padding: 25px 0;
 }
 
-.service-customers h2 {
+.service-customers h2 , .get_started h2 {
   color: white;
-  text-align: center;
 }
+
 
 .table > tbody > .first-tr > td{
   border: none;
@@ -246,20 +276,86 @@ body {
   padding-left: 200px;
 }
 
+/* SEZIONE TEAMS */
 
+.rocker-img {
+  display: inline-block;
+  width: 50%;
+  background-color: white;
+  padding-bottom: 60px;
+  vertical-align: middle;
+  margin-bottom: 20px;
+}
 
+.rocker-img img {
+  margin: 30px;
+}
 
+.teams .arrow_slide {
+vertical-align: middle;
+}
 
+.teams h2 {
+  padding: 30px 0;
+}
 
+/* SEZIONE GET STARTED */
 
+#create-ur-account {
+  color: #0069FE;
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  margin: 20px;
+  transition: 0.3s;
+}
 
-
-
-
+#create-ur-account:hover {
+  background-color: lightgrey;
+}
 
 
 /* Regole Footer */
 
 footer {
-  background-color: lightblue;
+  background-color: #010E28;
+}
+
+.footer-list a , footer p , .social-list a{
+  color: #929CB2;
+}
+
+footer img {
+  margin-top: 40px;
+}
+
+footer h4 {
+  color:white;
+  margin-top: 40px;
+}
+
+.social-list li{
+  display: inline-block;
+}
+
+.social-list a {
+  padding: 0 5px;
+  font-size: 20px;
+}
+
+.footer-list {
+  list-style-type: none;
+}
+
+.footer-list li {
+  margin: 10px 0;
+}
+
+.footer-list a {
+  text-decoration: none;
+}
+
+.footer-list a:hover , .social-list a:hover{
+  color: white;
 }
