@@ -93,8 +93,8 @@ body {
 .header_jumbo p {
   color: white;
   font-size: 22px;
-  margin-bottom: 50px;
 }
+
 /* SEZIONE LOGIN */
 
 .tabella-login {
@@ -102,6 +102,7 @@ body {
   text-align: center;
   background-color: white;
   border-radius: 5px;
+  margin-bottom: 40px;
 }
 
 .header_jumbo .log_in{
@@ -196,7 +197,7 @@ body {
 }
 
 .deploy h5 ,.design h5{
-  font-size: 16px;
+  font-size: 18px;
   padding-bottom: 25px;
 }
 
@@ -233,7 +234,7 @@ body {
 }
 
 .slide-img a:hover {
-  color: black;
+  color: #010E28;
 }
 
 @media all and (max-width:768px) {
@@ -262,6 +263,9 @@ body {
   color: white;
 }
 
+.table {
+  margin: 30px;
+}
 
 .table > tbody > .first-tr > td{
   border: none;
@@ -288,11 +292,16 @@ body {
 }
 
 .rocker-img img {
-  margin: 30px;
+  margin: 50px;
 }
 
 .teams .arrow_slide {
 vertical-align: middle;
+}
+
+.rocker-img p:first-of-type{
+  font-size: 20px;
+  color: grey;
 }
 
 .teams h2 {
@@ -328,6 +337,7 @@ footer {
 
 footer img {
   margin-top: 40px;
+  margin-bottom: 10px;
 }
 
 footer h4 {
