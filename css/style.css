@@ -50,6 +50,7 @@ body {
 #sign-up:hover, #submit_login:hover {
   background-color: #005EFF;
   color: white;
+
 }
 
 
@@ -62,7 +63,7 @@ body {
   margin-top: 5px;
   transition: 0.3s;
 }
-
+/* SEZIONE MEDIA QUERY */
 @media all and (min-width:768px) and (max-width: 1200px) {
   .navbar-toggle {
     display: block;
@@ -72,6 +73,23 @@ body {
   }
   .navbar-header {
     width: 100%;
+  }
+}
+
+@media all and (max-width:767px) {
+  .icon-list li {
+    width: calc(100% / 3);
+  }
+  .slide-img a {
+    display: none;
+  }
+  .shark-fixed {
+    position: fixed;
+    left: 20px;
+  }
+  .chat-fixed {
+    position: absolute;
+    left:  100px;
   }
 }
 
@@ -176,15 +194,14 @@ body {
   vertical-align: middle;
 }
 
-@media all and (max-width:767px) {
-  .icon-list li {
-    width: calc(100% / 3);
-  }
-}
+
+
 
 #view {
   padding: 40px 0;
 }
+
+
 
 /* SEZIONE DEPLY AND SCALE */
 
@@ -237,10 +254,22 @@ body {
   color: #010E28;
 }
 
-@media all and (max-width:768px) {
-  .slide-img a {
-      display: none;
-  }
+.carousel-control.right , .carousel-control.left {
+  background-image: none;
+}
+
+.carousel-control {
+  color: black;
+  top: 250px;
+}
+
+.carousel-control.right {
+  left: 20px;
+}
+
+.carousel-control.left {
+  right: 20px;
+  left: auto;
 }
 
 
@@ -368,4 +397,56 @@ footer h4 {
 
 .footer-list a:hover , .social-list a:hover{
   color: white;
+}
+
+/* Shark Icon */
+
+.shark-fixed {
+  position: fixed;
+  width: 80px;
+  bottom: 20px;
+  right: 20px;
+}
+
+.shark-fixed img {
+  width: 100%;
+  height: auto;
+  background-color: #0061FF;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.fixed-circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: red;
+  border: 3px solid white;
+  color: white;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  text-align: center;
+  line-height: 18px;
+}
+
+.chat-fixed {
+  position: absolute;
+  bottom: 20px;
+  right: 100px;
+  color: black;
+  background-color: white;
+  padding: 15px;
+  height: 70px;
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+  visibility: hidden;
+  opacity: 0.1;
+}
+
+.shark-fixed:hover .chat-fixed{
+  visibility: visible;
+  transition: opacity 0.5s;
+  opacity: 1;
 }
